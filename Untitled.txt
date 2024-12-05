@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tufan Shopping Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .categories, .featured-products, .food-section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .categories h2, .featured-products h2, .food-section h2 {
+            margin: 0 0 10px 0;
+        }
+        .category-list, .product-list, .food-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .category, .product, .food-item {
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .category:hover, .product:hover, .food-item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tufan</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Food</a>
+            <a href="#">Cart</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products, brands, and more...">
+    </div>
+    <div class="categories">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <div class="category">Electronics</div>
+            <div class="category">Fashion</div>
+            <div class="category">Groceries</div>
+            <div class="category">Home & Furniture</div>
+            <div class="category">Beauty & Personal Care</div>
+            <div class="category">Books & More</div>
+        </div>
+    </div>
+    <div class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">Smartphone</div>
+            <div class="product">Laptop</div>
+            <div class="product">Headphones</div>
+            <div class="product">Shoes</div>
+            <div class="product">Watches</div>
+            <div class="product">Fitness Bands</div>
+        </div>
+    </div>
+    <div class="food-section">
+        <h2>Order Food</h2>
+        <div class="food-list">
+            <div class="food-item">Pizza</div>
+            <div class="food-item">Burger</div>
+            <div class="food-item">Pasta</div>
+            <div class="food-item">Salads</div>
+            <div class="food-item">Sushi</div>
+            <div class="food-item">Desserts</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Tufan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
